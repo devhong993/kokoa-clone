@@ -1,0 +1,52 @@
+.nav {
+    position: absolute;
+    box-sizing: border-box;
+
+    padding: 20px 40px;
+    bottom: 0px;;
+    width: 100%;
+
+    background-color: var(--kokoa-nav-black);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.nav__ul {
+    display: flex;
+    justify-content: space-between;
+
+    font-size:24px;
+    opacity:0.9;
+}
+
+.nav__link {
+    position: relative;
+}
+
+.nav__notification {
+    position:absolute;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius:50%;
+    
+    background-color: var(--kokoa-red);
+}
+
+.nav__notification-count {
+    left:15px;
+    bottom: 15px;
+    width: 20px;
+    height: 20px;
+
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav__notification-dot {
+    left:28px;
+    bottom: 22px;
+    width: 5px;
+    height: 5px;
+}
