@@ -1,0 +1,23 @@
+.badge {
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius:50%;
+    
+    background-color: var(--kokoa-red);
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+.badge--md {
+    width: 20px;
+    height: 20px;
+}
+
+.badge--dot {
+    width: 5px;
+    height: 5px;
+}

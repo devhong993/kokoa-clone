@@ -7,6 +7,10 @@
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/chats.css";
+@import "components/find.css";
 
 @import "screens/login.css";
 
@@ -23,7 +27,7 @@ body {
 
 .phone-sized-window {
     position: relative;
-    
+
     width: 432px;
     height: 846px;
     border-radius: 15px;
@@ -34,3 +38,15 @@ body {
     box-shadow: 0px 1px 50px 0px black;
 }
 
+.main-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+.screen-div-line {
+    width: 100%;
+    height: 1px;
+
+    margin: 15px 0px;
+
+    background-color: grey;
+}

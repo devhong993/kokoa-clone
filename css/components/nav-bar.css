@@ -22,31 +22,16 @@
     position: relative;
 }
 
-.nav__notification {
+.nav__notification-count {
     position:absolute;
 
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius:50%;
-    
-    background-color: var(--kokoa-red);
-}
-
-.nav__notification-count {
     left:15px;
     bottom: 15px;
-    width: 20px;
-    height: 20px;
-
-    font-weight: 600;
-    font-size: 14px;
 }
 
 .nav__notification-dot {
+    position:absolute;
+
     left:28px;
     bottom: 22px;
-    width: 5px;
-    height: 5px;
 }
