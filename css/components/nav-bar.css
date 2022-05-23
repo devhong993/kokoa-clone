@@ -29,9 +29,26 @@
     bottom: 15px;
 }
 
+.nav__notification-count:hover {
+    animation: notificationAnimation 2s ease-in-out infinite;
+}
+
 .nav__notification-dot {
     position:absolute;
 
     left:28px;
     bottom: 22px;
+}
+
+@keyframes notificationAnimation {
+    0% {
+        transform:none;
+    }
+    50% {
+        transform: translateY(-6px) rotateY(360deg);
+    }
+    100% {
+        transform: none;
+    }
+
 }

@@ -25,14 +25,151 @@
 
 
 .chat__timestamp {
-    color:white;
-    background-color:#383838;
-    padding: 10px;
+    
+    margin-bottom: 25px;
+    padding: 15px;
+    
     border-radius: 25px;
-
+    
     font-size: 14px;
+    background-color:var(--kokoa-chat-grey);
+    color:white;
 }
 
 .message-row {
+    display: flex;
 
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message__time,
+.message__author {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.message__author {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.message__info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.message__bubble {
+    margin-right: 5px;
+    padding: 13px;
+
+    background-color: var(--kokoa-chat-grey);
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.message-row--own {
+    justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+    margin-right: 0px;
+    margin-left: 5px;
+
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+
+    background-color: var(--kokoa-yellow);
+    color: var(--kokoa-dark);
+}
+
+.message-row--own .message__info {
+    flex-direction: row-reverse;
+}
+
+/* .message-row--own .message__bubble {
+    order:1
+}
+
+.message-row--own .message__time {
+    order:0
+} */
+
+.reply {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width:100%;
+    height:38px;
+    bottom: 0px;
+    background-color: var(--kokoa-chat-grey);
+
+    box-sizing: border-box;
+
+    border-radius: 0px 0px 15px 15px;
+}
+
+.reply__column {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height: 100%;
+}
+
+.reply__column:first-child {
+    width: 10%;
+    font-size: 20px;
+}
+
+.reply__column:nth-child(2) {
+    width:74%;
+}
+
+.reply__column:nth-child(2) input {
+    height: 100%;
+}
+
+.reply__column:nth-child(3) {
+    width: 10%;
+}
+
+.reply__column:last-child {
+    width: 10%;
+}
+
+.reply input {
+    width: 100%;
+    height: 30px;
+
+    background-color: var(--kokoa-chat-input-dark);
+    caret-color: var(--kokoa-blue);
+    font-size: 20px;
+    color: white;
+    border:none;
+}
+
+.reply__column:last-child button {
+    width:100%;
+    height:100%;
+
+    border:none;
+
+    background-color: var(--kokoa-yellow);
+    font-size: 20px;
+    color: var(--kokoa-dark);
+
+    border-radius: 0px 0px 15px 0px;
 }
